@@ -1,0 +1,77 @@
+ *, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	line-height: 1;
+	font-family: "Helvetica Neue", "メイリオ", Meiryo, Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+} 
+
+body {
+	padding: 1em;
+	background: black;
+	color: #222;
+}
+
+.tag-list {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 600px;
+	padding: 0 5px 5px;
+	background: #000;
+	border: 2px solid #333;
+	list-style: none;
+	border-radius: 60px;
+}
+.tag-list li {
+	margin: 5px 5px 0 0;
+	
+}
+.tag-list .tag-input-wrap {
+	flex: auto;
+	min-width: 100px;
+	
+}
+
+.tag-list li a {
+	position: relative;
+	display: block;
+	min-width: 30px;
+	padding: 6px;
+	height: 30px;
+	padding: 0 10px;
+	background: #1c5bf6;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 60px;
+}
+.tag-list li a:hover:after,
+.tag-list li a:focus:after {
+	content: "×";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 0 5px;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 4px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.tag-list li .tag-input {
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding: 0 5px;
+	outline: none;
+	color: #fff;
+	background: #000;
+	font-size: 14px;
+	line-height: 30px;
+}
